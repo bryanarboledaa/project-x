@@ -1,0 +1,13 @@
+<%= form_with scope: :user, model: @admin_form, method: :post do |f| %>
+
+<p> Invite Member </p>
+
+<%= f.label :first_name %>
+<%= f.text_field :first_name %> </br>
+<%= f.label :last_name %>
+<%= f.text_field :last_name %> </br>
+<%= f.label :email %>
+<%= f.email_field :email %>
+
+<%= f.submit %>
+<% end %>
