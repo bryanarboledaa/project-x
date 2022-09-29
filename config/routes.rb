@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  
-    mount RailsAdmin::Engine => '/command_center/super_admin', as: 'rails_admin'
+  mount RailsAdmin::Engine => '/command_center/super_admin', as: 'rails_admin'
 
   get 'home/index'
   # devise_for :users
@@ -22,8 +21,5 @@ Rails.application.routes.draw do
 
   get 'admin/form' => 'admin#new'
   post 'admin/form' => 'admin#create'
-
-  
-  
 
 end
